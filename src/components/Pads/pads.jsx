@@ -1,5 +1,5 @@
 import "./pads.sass";
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 
 const Pads = () => {
 
@@ -51,21 +51,12 @@ const Pads = () => {
         }
     ];
 
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(null);
-
-    const handlePad = () => {
-        const audio = audioRef.current;
-        audio.currentTime = 0;
-        audio.play();
-        setIsPlaying(true)
+    const [activePad, setActivePad] = useState('');
+    const handlePad = (e) => {
+        setActivePad(e.target.children[0]);
+        // activePad.currentTime = 0;
+        activePad.play();
     }
-
-    useEffect(() => {
-        audioRef.current.addEventListener('ended', () => {
-            setIsPlaying(false)
-        })
-    }, [])
 
     return (
         <div className='pads'>
@@ -73,12 +64,11 @@ const Pads = () => {
                 <div
                     className="drum-pad"
                     key={idx}
-                    onClick={!isPlaying && handlePad}
+                    onClick={handlePad}
                 >
                     <audio
                         src={pad.url}
                         id={pad.keyTrigger}
-                        ref={audioRef}
                         className='clip'
                     ></audio>
                     <span>{pad.keyTrigger}</span>
