@@ -1,0 +1,22 @@
+@import '../../variables'
+
+.pad
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 6em
+    height: 6em
+    border-radius: 8px
+    background: $white
+    box-shadow: 5px 5px 1px 2px rgba(0, 0, 0, 0.4)
+    cursor: pointer
+    transition: all 0.1s cubic-bezier(0.64, 0, 0.78, 0)
+
+    &:hover
+        box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.4)
+
+    span
+        font-size: 18px
+        font-weight: 700
+        color: $black
+        pointer-events: none

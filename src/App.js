@@ -1,12 +1,12 @@
 import './App.sass';
 import Display from './components/Display/display';
-import Pads from './components/Pads/pads';
+import DrumPad from './components/DrumPad/drumPad';
 
 const App = () => {
   return (
     <div className='machine__wrp' id='drum-machine'>
       <Display />
-      <Pads />
+      <DrumPad />
     </div>
   );
 }
