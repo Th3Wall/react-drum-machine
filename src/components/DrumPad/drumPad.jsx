@@ -1,6 +1,6 @@
 import Pad from "../Pad/pad";
 import "./drumPad.sass";
-import { soundBank } from '../data/soundBank';
+import { soundBank } from '../../data/soundBank';
 
 const DrumPad = () => {
     return (
