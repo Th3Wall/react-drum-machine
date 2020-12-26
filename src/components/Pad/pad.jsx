@@ -1,19 +1,36 @@
 import "./pad.sass";
-import { useEffect, createRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { useStateValue } from "../../stateProvider";
+import { actionTypes } from "../../reducer";
 
 const Pad = props => {
 
-    const audioRef = createRef();
+    const audioRef = useRef();
+    // eslint-disable-next-line
+    const [state, dispatch] = useStateValue();
+
+    const handlePad = () => {
+        audioRef.current.currentTime = 0;
+        audioRef.current.play();
+        dispatch({
+            type: actionTypes.SET_DISPLAY,
+            soundName: props.id
+        })
+    }
+
+    const handleKey = (e) => {
+        if (e.keyCode === props.keyCode) {
+            audioRef.current.currentTime = 0;
+            audioRef.current.play();
+            dispatch({
+                type: actionTypes.SET_DISPLAY,
+                soundName: props.id
+            })
+        }
+    };
 
     useEffect(() => {
-        const handleKey = (event) => {
-            if (event.keyCode === props.keyCode) {
-                audioRef.current.currentTime = 0;
-                audioRef.current.play();
-            }
-        };
         window.addEventListener('keydown', handleKey);
-    
         return () => {
             window.removeEventListener('keydown', handleKey);
         };
@@ -21,9 +38,9 @@ const Pad = props => {
 
     return (
         <div
-            className="pad"
+            className={`pad`}
             key={props.idx}
-            onClick= {(e) => props.handlePad(e)}
+            onClick= {handlePad}
         >
             <audio
                 ref={audioRef}
