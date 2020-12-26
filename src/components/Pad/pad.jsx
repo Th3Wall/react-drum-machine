@@ -59,7 +59,10 @@ const Pad = props => {
                 id={props.keyTrigger}
                 className='clip'
             ></audio>
-            <span>{props.keyChar}</span>
+            <div className="pad__info">
+                <span className='pad__key'>{`${props.keyChar}. `}</span>
+                <span className='pad__soundname'>{props.id}</span>
+            </div>
         </div>
     )
 }

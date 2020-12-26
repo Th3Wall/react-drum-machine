@@ -1,5 +1,5 @@
 export const initialState = {
-    displaySoundName: ''
+    displaySoundName: 'React Drum Machine'
 }
 
 export const actionTypes = {
