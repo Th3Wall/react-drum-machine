@@ -36,7 +36,7 @@ const Pad = props => {
         padRef.current.classList.add('active');
         setTimeout(() => {
             padRef.current.classList.remove('active')
-        }, 200);
+        }, 100);
     }
 
     useEffect(() => {

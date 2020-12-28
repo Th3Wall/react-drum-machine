@@ -26,8 +26,8 @@ export const soundBank = [
     {
         keyCode: 83,
         keyChar: 'S',
-        id: "Kick n' Hat",
-        url: 'https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3'
+        id: 'Side Stick',
+        url: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'
     },
     {
         keyCode: 68,
@@ -44,8 +44,8 @@ export const soundBank = [
     {
         keyCode: 88,
         keyChar: 'X',
-        id: 'Side Stick',
-        url: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'
+        id: "Kick n' Hat",
+        url: 'https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3'
     },
     {
         keyCode: 67,
