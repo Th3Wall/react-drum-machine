@@ -24,7 +24,20 @@ Here's the [demo link](https://react-drum-machine-ni.vercel.app/).
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React Context API](https://reactjs.org/docs/context.html)
 - [Sass](https://sass-lang.com/)
-- [Vercel (Responsible for the deploy)](https://vercel.com/)
+- [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
+
+## Netlify deploy & configuration
+
+> The site is developed with some specific https://netlify.com apis.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a68bbd0c-935a-47ad-af34-d401f25406af/deploy-status)](https://app.netlify.com/sites/react-drum-machine-ni/deploys)
+
+### Deploy configuration steps
+
+1. Connect your GitHub account to Netlify
+3. Select the project
+2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
+3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
 
 ## :white_check_mark: Requirements ##
 
