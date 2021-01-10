@@ -1,5 +1,6 @@
 export const initialState = {
-    displaySoundName: 'React Drum Machine'
+    displaySoundName: 'React Drum Machine',
+    githubProfileUrl: 'https://github.com/Th3Wall'
 }
 
 export const actionTypes = {
