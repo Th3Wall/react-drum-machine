@@ -1,4 +1,4 @@
-![Image of React Drum Machine Project](https://i.postimg.cc/zvmrRKPy/React-Drum-Machine.png)
+![Image of React Drum Machine Project](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/ReactDrumMachine/ReactDrumMachine_readme.png)
 
 # React Drum Machine
 > This is a small project created with the purpose of learning the fundamentals of React.js starting from a simple Create React App.
