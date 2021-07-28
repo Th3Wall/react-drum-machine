@@ -10,8 +10,11 @@ I have structured the project with three React components and I have used some [
 I finally ended up with a little bit of styling: the UI is inspired by the ['Maschine Mikro M3'](https://www.native-instruments.com/en/products/maschine/production-systems/maschine-mikro/) drumpad controller from Native Instruments.
 <br/><br/>
 
-## ▶️ Demo ##
-Here's the [demo link](https://react-drum-machine-ni.netlify.app/).
+## ▶️ Demo
+
+Here you can find the demo link:
+
+- [Netlify](https://react-drum-machine-ni.netlify.app/)
 <br/><br/>
 
 ## :sparkles: Features ##
