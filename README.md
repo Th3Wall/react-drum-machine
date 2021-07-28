@@ -16,10 +16,10 @@ Here you can find the demo link:
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Use of React Hooks<br />
-:heavy_check_mark: Use of React Context API<br />
-:heavy_check_mark: Audio stems playable by keyboard input<br />
-:heavy_check_mark: Look &amp; Feel inspired by 'Maschine Mikro M3' from Native Instruments.
+:heavy_check_mark: &nbsp;Use of React Hooks<br />
+:heavy_check_mark: &nbsp;Use of React Context API<br />
+:heavy_check_mark: &nbsp;Audio stems playable by keyboard input<br />
+:heavy_check_mark: &nbsp;Look &amp; Feel inspired by 'Maschine Mikro M3' from Native Instruments.
 
 ## :rocket: Technologies ##
 
